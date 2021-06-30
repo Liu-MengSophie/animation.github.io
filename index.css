@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#body{
+    background-color: url(picture/homepage00.jpg);
+}
+
+#container{
+    width:90vw;
+    background-color:ivory;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1vw;
+    font-family: Chalkduster, sans-serif;               
+}
+
+#header {
+    height:12vw;
+    background-color:url(picture/homepage00.jpg);
+}
+
+#navigation {
+    height:4.5vw;
+    background-color:palegoldenrod;
+    margin-top: 0.4%;
+    margin-bottom: 0.4%
+}
+
+#leftside {
+    width:30%;
+    float:left;
+    margin-bottom: 0.4%;
+}
+
+#maincontent {
+    width:100%;
+    float:left;
+    margin-bottom: 0.4%;
+}
+
+#footer {
+    height:4vw;
+    background-color:palegoldenrod;
+    clear:both;
+    text-align:  center;
+    font-family: Chalkduster, sans-serif;
+}
+
+#footer a {
+    color: black;
+    text-decoration: none;
+}
+
+#header h1{
+    color:black;
+    font-size: 3.5vw;
+    text-align: center;
+    line-height: 12vw;
+    font-style: oblique;
+    font-family: Marker Felt;
+    font-weight: bold;
+}
+
+#navigation ul {
+    list-style-type:none;
+}
+
+#navigation li {
+    float:left;
+    position: relative;
+    height:4.4vw;
+    width:22.5vw;
+    background-color: palegoldenrod;
+    text-align: center;
+    line-height:3.5vw;
+    font-size: 1.7vw;
+}
+
+#navigation li a {
+    color:ivory;
+    font-size:1.7vw;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+#navigation li:hover {
+    background-color:darkgoldenrod;
+}
+
+#navigation ul ul {
+    position: absolute;
+    display: none;
+}
+
+#navigation ul ul li {
+    border-bottom: thin solid ivory;
+}
+
+#navigation li:hover ul {
+    display: block;
+}
+
+#navigation li:hover ul li a:hover {
+    color:darkslateblue;
+    background-color:darkgoldenrod;
+}
+
+#leftside img {
+    margin-left:1vw;
+    margin-top:1vw;
+}
+
+#maincontent h2 {
+    margin-left:2vw;
+    margin-right:2vw;
+    margin-top:1.2vw;
+    margin-bottom:1vw;
+    font-size:2vw;
+}
+
+.grid {
+    background-color: ivory;
+    height: 60vh;
+    margin: 1vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 0.3fr 1.4fr 0.8fr 0.8fr 0.8fr 0.6fr;
+    grid-template-areas: 
+        "name1"
+        "picture1"
+        "name2"
+        "picture2"
+        "name3"
+        "picture3";
+    grid-gap: 3em;
+    font-family: Chalkduster,sans-serif;
+    text-align:center;
+}
+
+.grid a {
+    color: black;
+    text-decoration: none;
+}
+
+.name1 {
+    background-color: ivory;
+    grid-area: name1;
+    border-radius: 3vw;
+    padding-top: 2vw;
+    font-size: 1.4vw;
+}
+
+.picture1 {
+    background-color: ivory;
+    grid-area: picture1;
+    border-radius: 3vw;
+    padding-top: 2vw;
+}
+
+.name2 {
+    background-color: ivory;
+    grid-area: name2 ;
+    border-radius: 3vw;
+    padding-top: 2vw;
+    font-size: 1.4vw;
+}
+
+.picture2 {
+    background-color: ivory;
+    grid-area: picture2;
+    border-radius: 3vw;
+    padding-top: 2vw;
+}
+
+.name3 {
+    background-color: ivory;
+    grid-area: name3;
+    border-radius: 3vw;
+    padding-top: 2vw;
+    font-size: 1.4vw;
+}
+
+.picture3 {
+    background-color: ivory;
+    grid-area: picture3;
+    border-radius: 3vw;
+    padding-top: 2vw;
+}
+
+@media screen and (min-width: 600px) {
+    .grid {
+    margin: 1vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 0.1fr 0.1fr;
+    grid-template-areas: 
+        "name1 name2 name3 "
+        "picture1 picture2 picture3";
+    grid-gap: 0.5em;
+         }
+ }
